@@ -7,10 +7,10 @@
 % for i=0.1:0.1:5
     
 q=[1,1,1,1,1,1,1];
-dq=[0,0,0,0,0,0,0];
-ddq=[0,0,0,0,0,0,0];
-G3=Dynamics_L(q,dq,ddq);
-G4=Dynamics_N(q,dq,ddq);
+%dq=[0,0,0,0,0,0,0];
+%ddq=[0,0,0,0,0,0,0];
+G3=gravity_L(q);
+%G4=Dynamics_N(q,dq,ddq);
 
 % fid=fopen('test.txt','a+'); %写的方式打开文件（若不存在，建立文件）；
 % fprintf(fid,'%f\r\n',G4(2,1));  % %d 表示以整数形式写入数据，这正是我想要的；
